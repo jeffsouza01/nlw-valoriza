@@ -54,6 +54,11 @@ Tecnologias usadas para construir a aplicação.
 
 ## Documentação
 
+```bash
+# Acesse a documentação em
+http://localhost:3333/v1/api-docs
+```
+
 ### :construction: Em construção :construction:
 
 ### Made by **Jefferson da Silva** :v:
