@@ -1,0 +1,96 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "NLW Valoriza",
+    "description": "API desenvolvida para criação e gerenciamento de usuários e elogios na aplicação",
+    "contact": {
+      "name": "Jefferson da Silva",
+      "email": "je_jss@hotmail.com",
+      "url": "https://github.com/jeffsouza01"
+    },
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3333/",
+      "description": "Documentação da API"
+    }
+  ]
+  ,
+  "paths": {
+    "/users" : {
+      "post": {
+        "summary": "Cadastro de novo usuário",
+        "description": "Rota responsável para criação de um novo usuário",
+        "tags": ["Users"],
+        "requestBody": {
+          "content": {
+            "application/json":{
+              "schema": {
+                "$ref": "#/components/schemas/User"
+              },
+              "examples":{
+                "user":{
+                  "value": {
+                    "name": "Jamal",
+                    "email": "jamal@mail.com",
+                    "password": "apenasumasenha"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json":{
+                "schema": {
+                  "type": "object",
+                  "$ref": "#/components/schemas/User"
+                }
+              }
+            }
+          }
+        }    
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "User":{
+        "type":"object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          },
+          "created_at": {
+            "type": "string"
+          },
+          "updated_at": {
+            "type": "string"
+          }
+
+        }
+      }
+    },
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  }
+
+}

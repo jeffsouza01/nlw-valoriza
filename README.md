@@ -1,6 +1,6 @@
 <h1 align="center"> NLW - Valoriza </h1>
 
-## Sobre
+## :bookmark: Sobre
 
 Aplicação sobre a valorização dos estudantes, onde poderá ser realizado o cadastro e registrar um elogio.
 
@@ -46,7 +46,7 @@ Tecnologias usadas para construir a aplicação.
 
 ### :hammer_and_wrench: Futuras Funcionalidades
 
-- [ ] Aplicação do metodo DD e SOLID para separar as responsábilidades.
+- [ ] Aplicação do método DD e SOLID para separar as responsábilidades.
 - [ ] Deploy da Aplicação (ex. Heroku).
 - [ ] Persistências em Cloud utilizando a SUPABASE.
 - [ ] Aplicar erros personalizados
@@ -56,4 +56,4 @@ Tecnologias usadas para construir a aplicação.
 
 ### :construction: Em construção :construction:
 
-Made by **Jefferson da Silva** :v:
+### Made by **Jefferson da Silva** :v:
